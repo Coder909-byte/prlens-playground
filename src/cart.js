@@ -3,6 +3,9 @@ export function calculateTotal(items) {
 }
 
 export function averagePrice(items) {
-  if (items.length === 0) return 0;
   return calculateTotal(items) / items.length;
+}
+
+export function applyDiscount(total, percent) {
+  return total - total * percent;
 }
