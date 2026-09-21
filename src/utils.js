@@ -33,3 +33,10 @@
 
 //testing part 6 
 
+
+export function displayUser(user) {
+  const name = formatName(user.first, user.last);
+  const initials = getInitials(name);
+  return `${initials} — ${slugify(name)}`;
+}
+
